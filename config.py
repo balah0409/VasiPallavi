@@ -135,7 +135,7 @@ SPOTIFY_ARTIST_IMG_URL = getenv(
 
 SPOTIFY_ALBUM_IMG_URL = getenv(
     "SPOTIFY_ALBUM_IMG_URL",
-    "assets/SpotifyAlbum.jpeg",
+    "LippsMusic/assets/SpotifyAlbum.jpeg",
 )
 
 SPOTIFY_PLAYLIST_IMG_URL = getenv(
