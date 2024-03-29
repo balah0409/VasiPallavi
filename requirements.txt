@@ -7,8 +7,8 @@ ffmpeg-python
 gitpython
 hachoir
 heroku3
-motor
-pillow==10.2.0
+motor==3.0.0
+pillow==10.5.0
 psutil
 py-tgcalls==0.9.7
 pykeyboard
