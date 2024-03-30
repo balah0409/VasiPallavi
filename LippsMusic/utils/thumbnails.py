@@ -220,7 +220,7 @@ async def get_thumb(videoid: str):
             end_point_white = (text_x_position + line_length, 380)
             draw.line([start_point_white, end_point_white], fill="white", width=8)
         
-            circle_radius = 6 
+            circle_radius = 10 
             circle_position = (end_point_color[0], end_point_color[1])
             draw.ellipse([circle_position[0] - circle_radius, circle_position[1] - circle_radius,
                       circle_position[0] + circle_radius, circle_position[1] + circle_radius], fill=line_color)
@@ -231,7 +231,7 @@ async def get_thumb(videoid: str):
             end_point_color = (text_x_position + line_length, 380)
             draw.line([start_point_color, end_point_color], fill=line_color, width=9)
         
-            circle_radius = 6 
+            circle_radius = 10 
             circle_position = (end_point_color[0], end_point_color[1])
             draw.ellipse([circle_position[0] - circle_radius, circle_position[1] - circle_radius,
                           circle_position[0] + circle_radius, circle_position[1] + circle_radius], fill=line_color)
