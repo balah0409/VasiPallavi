@@ -197,7 +197,8 @@ async def get_thumb(videoid: str):
         draw_text_with_shadow(background, draw, (text_x_position, 230), title1[1], title_font, (255, 255, 255))
         draw_text_with_shadow(background, draw, (text_x_position, 320), f"{channel}  |  {views[:23]}", arial, (255, 255, 255))
         draw_text_with_shadow(
-            (6, 6), f"{MUSIC_BOT_NAME}", fill="white", font=arial)
+         (6, 6), f"{MUSIC_BOT_NAME}", fill="white", font=arial
+                            )
 
 
         line_length = 580  
