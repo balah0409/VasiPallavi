@@ -184,14 +184,16 @@ async def get_thumb(videoid: str):
         arial = ImageFont.truetype("LippsMusic/assets/font2.ttf", 30)
         font = ImageFont.truetype("LippsMusic/assets/font.ttf", 30)
         title_font = ImageFont.truetype("LippsMusic/assets/font3.ttf", 45)
-        draw.text(
-            (5, 5), f"{MUSIC_BOT_NAME}", fill="white", font=name_font
-        )
+        lipps = ImageFont.truetype("LippsMusic/assets/font3.ttf", 40)
+        
 
         circle_thumbnail = crop_center_circle(youtube, 400, 20, start_gradient_color)
         circle_thumbnail = circle_thumbnail.resize((400, 400))
         circle_position = (120, 160)
         background.paste(circle_thumbnail, circle_position, circle_thumbnail)
+        draw.text(
+            (5, 5), f"{MUSIC_BOT_NAME}", fill="white", font=lipps
+        )
         
 
         text_x_position = 565
