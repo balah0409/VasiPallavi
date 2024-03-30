@@ -184,7 +184,7 @@ async def get_thumb(videoid: str):
         arial = ImageFont.truetype("LippsMusic/assets/font2.ttf", 30)
         font = ImageFont.truetype("LippsMusic/assets/font.ttf", 30)
         title_font = ImageFont.truetype("LippsMusic/assets/font3.ttf", 45)
-        lipps = ImageFont.truetype("LippsMusic/assets/font3.ttf", 40)
+        lipps = ImageFont.truetype("LippsMusic/assets/font2.ttf", 40)
         
 
         circle_thumbnail = crop_center_circle(youtube, 400, 20, start_gradient_color)
@@ -192,7 +192,7 @@ async def get_thumb(videoid: str):
         circle_position = (120, 160)
         background.paste(circle_thumbnail, circle_position, circle_thumbnail)
         draw.text(
-            (5, 5), f"{MUSIC_BOT_NAME}", fill="white", font=lipps
+            (5, 7), f"{MUSIC_BOT_NAME}", fill="white", font=lipps
         )
         
 
@@ -201,7 +201,6 @@ async def get_thumb(videoid: str):
         draw_text_with_shadow(background, draw, (text_x_position, 180), title1[0], title_font, (255, 255, 255))
         draw_text_with_shadow(background, draw, (text_x_position, 230), title1[1], title_font, (255, 255, 255))
         draw_text_with_shadow(background, draw, (text_x_position, 320), f"{channel}  |  {views[:23]}", arial, (255, 255, 255))
-        draw_text_with_shadow(background, draw, (text_x_position, 50), f"{MUSIC_BOT_NAME}" , title_font, (255, 255, 255))
         
 
 
