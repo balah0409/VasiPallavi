@@ -1,5 +1,3 @@
-# ENJOY FUCKERS
-
 import random
 import logging
 import os
