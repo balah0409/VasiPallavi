@@ -2,7 +2,7 @@
     𝐋ɪᴘᴘꜱ 𝐌ᴜꜱɪᴄ 𝐁ᴏᴛ
    </h2>  
  <p align="center">   
-<img src="https://graph.org/file/0e860e9e04895e18dd39a.jpg">   
+<img src="https://graph.org/file/cc41b9fed2c5c87f14044.jpg">   
  </p> ━━━━━━━━━━━━━━━━━━━━ 
  <p align="center"> 
  <a href="https://github.com/Lippsxd/Lippsmusicbot /stargazers"><img src="https://img.shields.io/github/stars/Lippsxd/Lippsmusicbot ?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a> <a href="https://github.com/Lippsxd/Lippsmusicbot /network/members"> <img src="https://img.shields.io/github/forks/Lippsxd/Lippsmusicbot?color=black&logo=github&logoColor=black&style=for-the-badge" /></a> 
