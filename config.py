@@ -88,10 +88,7 @@ PING_IMG_URL = getenv(
     "LippsMusic/assets/Ping.jpeg",
 )
 
-PLAYLIST_IMG_URL = getenv(
-    "PLAYLIST_IMG_URL",
-    "LippsMusic/assets/Playlist.jpeg",
-)
+PLAYLIST_IMG_URL = getenv("PLAYLIST_IMG_URL", "https://telegra.ph/file/5fd277094e385343dbc06.jpg")
 
 GLOBAL_IMG_URL = getenv(
     "GLOBAL_IMG_URL",
