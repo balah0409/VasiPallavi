@@ -92,10 +92,7 @@ GLOBAL_IMG_URL = getenv(
     "LippsMusic/assets/Global.jpeg",
 )
 
-STATS_IMG_URL = getenv(
-    "STATS_IMG_URL",
-    "LippsMusic/assets/Stats.jpeg",
-)
+STATS_IMG_URL = getenv("STATS_IMG_URL", "https://telegra.ph/file/297c2534f243e87054316.jpg")
 
 TELEGRAM_AUDIO_URL = getenv(
     "TELEGRAM_AUDIO_URL",
