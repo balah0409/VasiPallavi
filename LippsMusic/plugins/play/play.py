@@ -24,6 +24,37 @@ from LippsMusic.utils.logger import play_logs
 from LippsMusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
+EMOJI = [
+    "💞",
+    "🔎",
+    "🔍",
+    "🧪",
+    "💣",
+    "⚡️",
+    "🔥",
+    "🕺",
+    "🎩",
+    "🌈",
+    "🍷",
+    "🥂",
+    "🍾",
+    "🥃",
+    "🥤",
+    "🍽",
+    "🍭",
+    "🚗",
+    "🚕",
+    "🚓",
+    "🚑",
+    "🚀",
+    "💎",
+    "🔮",
+    "🪄",
+    "💌",
+    "⁉️",
+    "💤",
+    "🧨"
+]
 
 @app.on_message(
     filters.command(
