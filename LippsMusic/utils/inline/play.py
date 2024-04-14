@@ -1,9 +1,7 @@
-import random
 import math
-from typing import Union
-from config import SUPPORT_CHAT
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from LippsMusic import app
+
+from pyrogram.types import InlineKeyboardButton
+
 from LippsMusic.utils.formatters import time_to_seconds
 
 
