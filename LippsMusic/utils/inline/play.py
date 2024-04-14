@@ -1,7 +1,9 @@
+import random
 import math
-
-from pyrogram.types import InlineKeyboardButton
-
+from typing import Union
+from config import SUPPORT_CHAT
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from LippsMusic import app
 from LippsMusic.utils.formatters import time_to_seconds
 
 
@@ -53,7 +55,7 @@ def stream_markup_timer(_, chat_id, played, dur):
     else:
         bar = "⭑⭑⭑⭑⭑⭑⭑⭑⭑✪"
     buttons = [
-        [
+                [
             InlineKeyboardButton(
                 text=f"{played} {bar} {dur}",
                 callback_data="GetTimer",
@@ -95,7 +97,22 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+                  [
+                      InlineKeyboardButton(
+                text="⇆ 𝐒ʜᴜғғʟᴇ ⇆",
+                callback_data=f"ADMIN Shuffle|{chat_id}",
+                      ),
+                       InlineKeyboardButton(
+                text="↻ 𝐋ᴏᴏᴩ ↻", callback_data=f"ADMIN Loop|{chat_id}"
+                       )
+                  ]
+        [
+            InlineKeyboardButton(text="⏮ 10", callback_data=f"ADMIN 1|{chat_id}"),
+            InlineKeyboardButton(text="⏮ 30", callback_data=f"ADMIN 3|{chat_id}"),
+            InlineKeyboardButton(text="⏭ 10", callback_data=f"ADMIN 2|{chat_id}"),
+            InlineKeyboardButton(text="⏭ 30", callback_data=f"ADMIN 4|{chat_id}"),             
+        ],
+            [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
