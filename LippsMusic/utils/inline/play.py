@@ -69,7 +69,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text="⇆ 𝐒ʜᴜғғʟᴇ ⇆",
-                callback_data=f"ADMIN Shuffle|{chat_id}",
+                callback_data=f"ADMIN Shuffle|{chat_id}"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
